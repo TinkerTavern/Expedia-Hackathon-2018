@@ -33,12 +33,13 @@
                url: "/reviews/getReviews/" + search + "/",
                dataType: 'json',
                success: function (data) {
+                   $('#resultsDiv').html("")
                    for (var i = 0; i < data.length; i++) {
                        $('#resultsDiv').append(
-                           "<p>"+data[i].fields.reviewText+"</p>" +
-                           "<p>"+data[i].fields.location+"</p>" +
-                           "<p>"+data[i].fields.author+"</p>" +
-                           "<p>"+data[i].fields.upvotes+"</p>" +
+                           "<p><strong>Review:</strong>"+data[i].fields.reviewText+"</p>" +
+                           "<p><strong>Location:</strong>"+data[i].fields.location+"</p>" +
+                           "<p><strong>Author:</strong>"+data[i].fields.author+"</p>" +
+                           "<p><strong>up-votes: </strong>"+data[i].fields.upvotes+"</p>" +
                            "<p>"+data[i].fields.datePosted+"</p>"+
                            "<hr>");
                        responsiveVoice.speak(data[i].fields.reviewText);
