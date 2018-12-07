@@ -10,11 +10,23 @@
 <body>
   <h1> Type your Review Below: </h1>
   <form>
-    Author: <br><input type="text" name="author" id="author"><br>
-    Location: <br><input type="text" name="location" id="location"><br>
-    Review: <br><input type="text" name="review" id="review"><br>
+    <div class="form-group">
+      <label for"inputAuthor">Author</label>
+      <input type="text" class="form-control" name="author" id="author" placeholder="Input author here">
+    </div>
+    <!--Author: <br><input type="text" name="author" id="author"><br>-->
+    <div class="form-group">
+      <label for"inputLocation">Location</label>
+      <input type="text" class="form-control" name="location" id="location" placeholder="Input location here">
+    </div>
+    <!--Location: <br><input type="text" name="location" id="location"><br>-->
+    <div class="form-group">
+      <label for"inputAuthor">Review</label>
+      <input type="text" class="form-control" name="review" id="review" placeholder="Input review here">
+    </div>
+    <!--Review: <br><input type="text" name="review" id="review"><br>-->
   </form>
-  <button id="addButton", class='addButton'> Add Review </button>
+  <button id="addButton", class='btn btn-primary addButton'> Add Review </button>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
   <script type="text/javascript">
 
