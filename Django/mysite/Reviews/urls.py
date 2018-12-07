@@ -21,6 +21,5 @@ urlpatterns = [
     path('', views.addReviewPage, name='addReviewPage'),
     path('getReviews/<str:l>/', views.getReviews, name='getReview'),
     path('displayReviews/', views.displayReviews, name='displayReview'),
-    path('submitReview/', views.submitReview, name='submitReview'),
-    path('incrementupvote/', views.incrementUpvote, name="incrementUpvote")
+    path('submitReview/', views.submitReview, name='submitReview')
 ]
