@@ -24,12 +24,8 @@ def getReviews(request, l):
     else:
         raise Http404
 
-<<<<<<< HEAD
 @csrf_exempt
-def incrementUpvote(request):
-=======
 def incrementUpvotes(request):
->>>>>>> bcfcd21b2c713dc10f710e0a2932d4318f6bb834
     if request.is_ajax() and request.method == 'POST':
         r = Review.objects.get(pk=request.POST['id'])
         r.upvotes = r.upvotes+1

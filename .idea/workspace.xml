@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b8eb218a-9264-49b6-bcfc-632a468a5a23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Django/mysite/Reviews/templates/Reviews/getReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Django/mysite/Reviews/templates/Reviews/getReview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django/mysite/Reviews/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django/mysite/Reviews/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Django/mysite/Reviews/templates/Reviews/getReview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+            <state relative-caret-position="224">
+              <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -25,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/Django/mysite/Reviews/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -33,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Django/mysite/Reviews/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="76">
+              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -46,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/Django/mysite/Reviews/templates/Reviews/addReview.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-146">
-              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -78,60 +79,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Expedia-Hackathon-2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expedia-Hackathon-2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expedia-Hackathon-2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expedia-Hackathon-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expedia-Hackathon-2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expedia-Hackathon-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expedia-Hackathon-2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expedia-Hackathon-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="Reviews" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expedia-Hackathon-2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expedia-Hackathon-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="Reviews" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expedia-Hackathon-2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expedia-Hackathon-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="Reviews" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Expedia-Hackathon-2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Expedia-Hackathon-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="Reviews" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="Reviews" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,12 +108,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544222902651</updated>
-      <workItem from="1544222903750" duration="1539000" />
+      <workItem from="1544222903750" duration="1892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1539000" />
+    <option name="totallyTimeSpent" value="1892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="349" y="23" width="1058" height="819" extended-state="0" />
@@ -201,31 +149,31 @@
     <entry file="file://$PROJECT_DIR$/Django/mysite/Reviews/templates/Reviews/addReview.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-146">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Django/mysite/Reviews/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Django/mysite/Reviews/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="76">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Django/mysite/Reviews/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Django/mysite/Reviews/templates/Reviews/getReview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+        <state relative-caret-position="224">
+          <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
         </state>
       </provider>
     </entry>

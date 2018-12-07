@@ -12,8 +12,8 @@
   <div class="container"><form>
    <div class="form-group"><h1>Search for Reviews</h1></div>
     <div class="form-group"><input type="text" id="searchBox" placeholder="Search..."><br></div>
-    <div class="form-group"><button type="submit" id="submitButton">Search</button></div>
  </form></div>
+  <div class="form-group"><button type="submit" id="submitButton">Search</button></div>
    <div id="resultsDiv"></div>
 <script
  src="https://code.jquery.com/jquery-3.3.1.js"
@@ -35,7 +35,7 @@
                url: "/reviews/getReviews/" + search + "/",
                dataType: 'json',
                success: function (data) {
-                   $('#resultsDiv').html("")
+                   $('#resultsDiv').html("");
                    for (var i = 0; i < data.length; i++) {
                        $('#resultsDiv').append(
                            "<p><strong>Review:</strong>"+data[i].fields.reviewText+"</p>" +
@@ -44,7 +44,7 @@
                            "<p><strong>up-votes: </strong>"+data[i].fields.upvotes+"</p>" +
                            "<p>"+data[i].fields.datePosted+"</p>"+
                            "<hr>");
-<<<<<<< HEAD
+
                        responsiveVoice.speak(data[i].fields.reviewText);
                        var r = confirm("was it usefull?");
                        if(r == true){
@@ -60,14 +60,11 @@
                        });
                        }
                    }
-=======
                        responsiveVoice.speak(this.fields.reviewText)
-                   })
->>>>>>> bcfcd21b2c713dc10f710e0a2932d4318f6bb834
-               }
-           });
-       }
-   });
+                   }
+               })
+           };
+       });
 </script>
 </body>
 </html>
