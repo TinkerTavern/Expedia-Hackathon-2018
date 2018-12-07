@@ -24,6 +24,7 @@ def getReviews(request, l):
     else:
         raise Http404
 
+@csrf_exempt
 def incrementUpvote(request):
     if request.is_ajax() and request.method == 'POST':
         r = Review.objects.get(pk=request.POST['id'])

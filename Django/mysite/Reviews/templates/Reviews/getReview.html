@@ -34,30 +34,28 @@
                dataType: 'json',
                success: function (data) {
                    for (var i = 0; i < data.length; i++) {
-                       results.push(data[i]);
-                   }
-                   $.each(results, function(){
                        $('#resultsDiv').append(
-                           "<p>"+this.fields.reviewText+"</p>" +
-                           "<p>"+this.fields.location+"</p>" +
-                           "<p>"+this.fields.author+"</p>" +
-                           "<p>"+this.fields.upvotes+"</p>" +
-                           "<p>"+this.fields.datePosted+"</p>"+
+                           "<p>"+data[i].fields.reviewText+"</p>" +
+                           "<p>"+data[i].fields.location+"</p>" +
+                           "<p>"+data[i].fields.author+"</p>" +
+                           "<p>"+data[i].fields.upvotes+"</p>" +
+                           "<p>"+data[i].fields.datePosted+"</p>"+
                            "<hr>");
-                       responsiveVoice.speak(this.fields.reviewText);
+                       responsiveVoice.speak(data[i].fields.reviewText);
                        var r = confirm("was it usefull?");
                        if(r == true){
+                           console.log(data[i].pk);
                            $.ajax({
                            type: 'POST',
-                           url: 'incrementupvote/',
+                           url: '/reviews/incrementupvote/',
                            dataType: 'json',
-                           data: {'id': this.pk},
+                           data: {'id': data[i].pk},
                            success: function() {
                              console.log("success")
                            }
                        });
                        }
-                   })
+                   }
                }
            });
        }
