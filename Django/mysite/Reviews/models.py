@@ -1,7 +1,9 @@
 from django.db import models
 from django.utils import timezone
-# Create your models here.
 
+
+"""Review class for the database table Review.
+Contains attributes, reviewText, location, author, upvotes and datePosted"""
 class Review(models.Model):
     reviewText = models.TextField()
     location = models.CharField(max_length=50)

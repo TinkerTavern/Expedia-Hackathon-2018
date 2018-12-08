@@ -54,58 +54,34 @@ def incrementUpvotes(request):
         r = Review.objects.get(pk=request.POST['id'])
         r.upvotes = r.upvotes+1
         r.save()
-        return HttpResponse("hello")
+        return HttpResponse("success")
 
 @csrf_exempt
 def submitReview(request):
-    print("Hello")
     if request.is_ajax() and request.method == 'POST':
         r = Review(author=request.POST['author'],location=request.POST['location'],reviewText=request.POST['review'])#,datePosted=datetime.date.today())
         r.save()
-        return HttpResponse("Hello")
+        return HttpResponse("success")
     else:
         raise Http404
 
 def getAudio(request):
-        if os.path.isfile("test.wav"):
+        if os.path.isfile("test.wav"): # Deletes the old files first if there
             os.remove("test.wav")
         if os.path.isfile("test.flac"):
             os.remove("test.flac")
-        print("Start")
-        duration = 5 # sec
-        fs = 48000
+        duration = 5 # Seconds
+        fs = 48000 # Frequency
         recording = sd.rec(int(duration * fs), samplerate=fs, channels=2)
-        sd.wait()
-
+        sd.wait() # Waits for the recording to end before moving on
         r = sr.Recognizer()
-        print("middle")
         scipy.io.wavfile.write("test.wav", 48000, recording)
         ff = ffmpy.FFmpeg(inputs={'test.wav': None},outputs={'test.flac': None})
         ff.run()
         harvard = sr.AudioFile("test.flac")
-        print("Nearly there")
         with harvard as source:
             audio = r.record(source)
         spokenWords = r.recognize_google(audio).lower()
         dict = {'message':spokenWords}
-        jsonFile = json.dumps(dict)
-        print("Win?")
+        jsonFile = json.dumps(dict) # Converts string to json
         return HttpResponse(jsonFile, content_type='application/json')
-
-def logIn(request):
-    if request.is_ajax() and request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = authenticate(request, username=username, password=password)
-        if user is not None:
-            login(request, user)
-            # Redirect to a success page.
-            print("Pass")
-        else:
-            # Return an 'invalid login' error message.
-            print("Fail")
-
-def logout_view(request):
-    logout(request)
-    print("Pass")
-    # Redirect to a success page.

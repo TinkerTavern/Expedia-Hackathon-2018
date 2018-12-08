@@ -26,19 +26,14 @@
    var app = angular.module('searchResults', []);
    $(document).ready(function() {
        $("#submitButton").click(function () {
-            console.log("Button pressed")
             testFunc();
            // updateProducts();
        });
        function testFunc() {
-         console.log("Request incomming")
          $.ajax({
            type: 'GET',
            url: "/reviews/getAudio/",
            dataType: 'json',
-           success: function(data) {
-             console.log(data);
-           }
          })
        }
        function updateProducts() {
@@ -62,15 +57,11 @@
                        responsiveVoice.speak(data[i].fields.reviewText);
                        var r = confirm("was it usefull?");
                        if(r == true){
-                           console.log(data[i].pk);
                            $.ajax({
                            type: 'POST',
                            url: '/reviews/incrementupvote/',
                            dataType: 'json',
                            data: {'id': data[i].pk},
-                           success: function() {
-                             console.log("success")
-                           }
                        });
                        }
                    }
