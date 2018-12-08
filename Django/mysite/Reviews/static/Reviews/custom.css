@@ -28,10 +28,6 @@ button{
   outline:none;
   border-radius: 4px;
 }
-/* button:hover{
-  /* background:#aaa;
-  color:#fff;
-} */
 button:before,button:after{
   content:'';
   position:absolute;
