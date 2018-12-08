@@ -13,6 +13,7 @@ import json
 import time
 import os
 import os.path
+from django.contrib.auth import authenticate, login, logout
 
 
 # Create your views here.
@@ -90,3 +91,21 @@ def getAudio(request):
         jsonFile = json.dumps(dict)
         print("Win?")
         return HttpResponse(jsonFile, content_type='application/json')
+
+def logIn(request):
+    if request.is_ajax() and request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            # Redirect to a success page.
+            print("Pass")
+        else:
+            # Return an 'invalid login' error message.
+            print("Fail")
+
+def logout_view(request):
+    logout(request)
+    print("Pass")
+    # Redirect to a success page.

@@ -1,0 +1,52 @@
+<!doctype HTML>
+<html>
+  <title> Add a Review </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'Reviews/custom.css'%}">
+<body>
+  <div class="container">
+    <h1><br> Type your Review Below: </h1>
+    <form>
+      <div class="form-group">
+        <label for"inputAuthor">Username:</label>
+        <input type="text" class="form-control" name="author" id="author" placeholder="Input author here" style="background:#36393f;border:#36393f;color:white">
+      </div>
+      <!--Author: <br><input type="text" name="author" id="author"><br>-->
+      <div class="form-group">
+        <label for"inputLocation">Password</label>
+        <input type="text" class="form-control" name="location" id="location" placeholder="Input location here" style="background:#36393f;border:#36393f;color:white">
+      </div>
+      <!--Review: <br><input type="text" name="review" id="review"><br>-->
+    </form>
+    <div style="text-align:center">
+      <button id="addButton",> Log In </button>
+    </div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <script type="text/javascript">
+
+      $(document).ready(function() {
+        $('#addButton').click(function() {
+            var username = $('#author').val();
+            var password = $('#location').val();
+          console.log(author, location);
+          $.ajax({
+            type: 'POST',
+            url: 'submitReview/',
+            dataType: 'json',
+            data: {'username': author, 'password': location},
+            logIn(data),
+            success: function() {
+              console.log("success")
+            }
+          });
+        });
+      });
+  </script>
+
+
+</body>
+
+</html>
