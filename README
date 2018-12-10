@@ -9,3 +9,11 @@ The aim of the system is to make the proces significantly easier, by offering a 
 find out about what a location is like for a blind person, from verified individuals, both blind and not.
 The intention is that they can then easily book the entire trip at the same time, on the web platform.
 However, due to time limitations, this did not happen in the end.
+
+
+What the program does:
+- Lets users add reviews (text based)
+- Asks the user for which location they would like to hear reviews from
+- Once they've been asked, it loads any relevant reviews for the location
+- Once a review has been read out, the user is asked if they found it useful
+- If they found it useful, the review is upvoted

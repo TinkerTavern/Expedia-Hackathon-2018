@@ -5,6 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 from Reviews.models import Review
 from django.core import serializers
 from recognition import SpeechRecognition
+import json
 
 # Create your views here.
 
@@ -55,10 +56,11 @@ def incrementUpvote(request):
 
 @csrf_exempt
 def submitReview(request):
+    """ Submits the review to the database as a POST request """
     if request.is_ajax() and request.method == 'POST':
         r = Review(author=request.POST['author'],location=request.POST['location'],reviewText=request.POST['review'])#,datePosted=datetime.date.today())
         r.save()
-        return HttpResponse("Hello")
+        return HttpResponse("")
     else:
         raise Http404
 

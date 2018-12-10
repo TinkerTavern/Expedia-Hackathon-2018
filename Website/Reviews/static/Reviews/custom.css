@@ -10,14 +10,6 @@ body {
     color: white;
 }
 
-}
-/*
-body {
-  margin:40px;
-  background-color:black
-
-} */
-
 
 div form-control {
   background: black;
@@ -132,14 +124,6 @@ button:hover:before,button:hover:after{
   border:4px solid white;
 }
 
-
-/* .dot {
-  height: 205px;
-  width: 205px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-} */
 
 .circle {
   width: 500px;
