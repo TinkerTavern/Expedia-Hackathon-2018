@@ -1,11 +1,14 @@
 ## GitHub for the Expedia Hackathon 2018 (Pink Team)
-This is the repository we used to complete our programming challenge(s)
+This is the repository we used to complete our programming challenge(s).
+It also contains the backbone for a presentation we had to do as part of the event
 
 The challenge was: Design a system that improves the travel experience for a group of people
 We decided to focus on people who were blind, as they have significant issues with deciding on where to go,
 and actually booking everything.
 
-The aim of the system is to make the proces significantly easier, by offering a portal where users could
+In this hackathon, we were put randomly into groups, so we were all working with people who we hadn't met before
+
+The aim of the system is to make the process significantly easier, by offering a portal where users could
 find out about what a location is like for a blind person, from verified individuals, both blind and not.
 The intention is that they can then easily book the entire trip at the same time, on the web platform.
 However, due to time limitations, this did not happen in the end.
@@ -17,3 +20,14 @@ What the program does:
 - Once they've been asked, it loads any relevant reviews for the location
 - Once a review has been read out, the user is asked if they found it useful
 - If they found it useful, the review is upvoted
+
+
+Challenges we faced:
+- Learning curve of using new techniques and tools, such as the API's needed,
+  and the libraries, most notably Django
+
+What we would add with more time:
+- A similar page to the add review page, where a blind user can speak their review to add it
+- Some sort of a way to allow a blind user to book a flight/ trip to the place they asked about
+- A noise to let the user know when to start and stop speaking
+-
